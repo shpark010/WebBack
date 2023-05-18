@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Duzon\Web\WebBack\WebLabs\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3265527976.index
+313000256.index
+799011890.index
+3600071263.index
+1448130949.index
+1664151708.index
+181261246.index

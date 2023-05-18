@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%
+	//java 코드를 쓰는 영역
+	//jsp 파일에서는 우리가 원하는 모든 작업 가능 (DB 연결 > 실행 > 결과 > 화면 출력) > jsp (웹에서 필요한 모든 작업 가능)
+	//jsp 장점 : 쉽다.
+	//	  단점 : 분업화 힘들다, 유지보수 (모든 코드가 한곳에) >> 관심사가 분리 되어 있지 않는다.
+	
+	
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+hello
+</body>
+</html>
