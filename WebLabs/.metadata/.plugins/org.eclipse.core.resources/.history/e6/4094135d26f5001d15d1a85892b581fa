@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Ex02_register.jsp" method="post">
+		<input type="text" id="userid" name="userid"><br>
+		<input type="password" id="pwd" name="pwd"><br>
+		<input type="checkbox" name="hobby" value="baseball">Baseball
+		<input type="checkbox" name="hobby" value="soccer">Soccer
+		<input type="checkbox" name="hobby" value="basketball">Basketball
+		<input type="submit" value="회원가입">
+	</form>
+</body>
+</html>
