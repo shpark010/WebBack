@@ -20,4 +20,18 @@
   	<param-name>filepath</param-name>
   	<param-value>C:\\web\\download</param-value>
   </context-param>
+  <!-- 
+  WebAPP(context)에 적용되는 Error 페이지 설정하기
+  
+  1. 상태코드 (500 서버코드 , 404 요청페이지 없어요 , 403 접근 권한) ㅁ다ㅏ 페이지를 만들어서 서비스 가능
+  2. 예외처리 별로 (세분화) : Nullpoint 처리페이지, indexOut...
+  -->
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/error/Error500.jsp</location>
+  </error-page>
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error/Error404.jsp</location>
+  </error-page>
 </web-app>
