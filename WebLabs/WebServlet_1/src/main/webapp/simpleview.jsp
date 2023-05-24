@@ -9,5 +9,8 @@
 <body>
 	<h3>SimpleController에서 request를 통해 전달된 데이터를 출력</h3>
 	결과출력 : <%=request.getAttribute("result")%>
+	
+	<h3>EL</h3>
+	${requestScope.result}<br>
 </body>
 </html>
