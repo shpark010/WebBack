@@ -13,6 +13,7 @@ request.getContextPath()  >> http://192.168.0.29:8090/WebServlet_2
 pageContext.request.contextPath  >> http://192.168.0.29:8090/WebServlet_2
 -->
 	<h3>index page</h3>
+	<!-- 우리가 사용했던 방식 :  request.getContextParth() -->
 	<a href="${pageContext.request.contextPath}/NowServlet">요청하기</a>
 	<br>
 	<a href="${pageContext.request.contextPath}/Now.do">요청하기</a>

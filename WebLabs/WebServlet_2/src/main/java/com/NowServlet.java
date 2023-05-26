@@ -15,12 +15,15 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(
 		description = "서블릿 테스트 중입니다 홍길동", 
+		//여러 경로를 지정
 		urlPatterns = { 
 				"/NowServlet", 
 				"/Now.do", 
 				"/Now.action", 
 				"/Now.kglim"
 		}, 
+		//초기값 설정(해당 경로를 통한 페이지에서 사용할 값 선언)
+		//전역으로 사용하기 위해서는 web.xml에서 설정해야 한다.
 		initParams = { 
 				@WebInitParam(name = "id", value = "kosa", description = "id 초기값 활용하기"), 
 				@WebInitParam(name = "jdbcDriver", value = "oracle.jdbc.OracleDriver", description = "오라클 드라이버 클래스 제공")
@@ -35,7 +38,7 @@ public class NowServlet extends HttpServlet {
         
     }
 
-	
+	//최초 실행시 단 한번만 실행
 	public void init(ServletConfig config) throws ServletException {
 		//초기화 함수 (자동 호출되는 함수)
 		//호출 시점 : NowServlet 클래스에 대한 [최초 요청시 한번 실행]
@@ -45,12 +48,15 @@ public class NowServlet extends HttpServlet {
 		//홍길동 첫 접속자 -> it.co.kr/Now.do 서버 요청 
 		//NowServlet 컴파일 >> class >> 실행 -> 생성자 호출 -> init 자동호출 -> doGET or doPOST -> 자동호출
 		
+		//처음 실행 후 컴파일, 생성자, init 생략
+		
 		//김유신 두번째 접속자  -> it.co.kr/Now.do 서버 요청 
 		// class >> 실행 -> doGET or doPOST -> 자동호출
 		
 		//유관순 두번째 접속자  -> it.co.kr/Now.do 서버 요청 
 		// class >> 실행 -> doGET or doPOST -> 자동호출
 		
+		//init함수가 가지는 특수한 기능(initParms에서 선언한 변수를 활용할 수 있다)
 		//DB연결 초기화 
 		String drivername = config.getInitParameter("jdbcDriver");
 		System.out.println("최초 요청시 한번 실행 : " + drivername);

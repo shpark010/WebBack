@@ -38,6 +38,7 @@ public class MemoServlet extends HttpServlet {
     	  String id = request.getParameter("id");
     	  String email = request.getParameter("email");
     	  String memo = request.getParameter("memo");
+    	  //값이 정상적으로 나오는지 출력해보기
     	  //out.print(id + "," + email + "," + memo);
     	  
     	  
@@ -60,10 +61,11 @@ public class MemoServlet extends HttpServlet {
     	   if(n>0){
     		    out.print("<script>");
     	     	out.print("alert('등록성공..');");
+    	     	// /MemoList 주소로 가게 설정
     	     	out.print("location.href='MemoList';");  //jsp  >>   /MemoList
     	     	//주소창에 입력 enter (F5) 요청
     	     	//localhost:8090/WebServlet_3/MemoList
-    	    out.print("</script>");
+    	     	out.print("</script>");
     	   }else{ //insert 에서 현실적으로 경우 ...
     		    out.print("<script>");
     		    out.print("alert('등록실패..');");
