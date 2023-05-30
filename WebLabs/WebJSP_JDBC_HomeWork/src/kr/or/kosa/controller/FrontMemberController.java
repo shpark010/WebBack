@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import kr.or.kosa.action.Action;
 import kr.or.kosa.action.ActionForward;
@@ -42,7 +43,7 @@ public class FrontMemberController extends HttpServlet {
 
 		Action action = null;
 		ActionForward forward = null;
-
+		
 		if (url.equals("/main.do")) {
 			forward = new ActionForward();
 			forward.setRedirect(false);

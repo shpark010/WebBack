@@ -2,6 +2,9 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>WebServlet_91_Session</display-name>
   <welcome-file-list>
-    <welcome-file>/WEB-INF/views/join/Ex02_JDBC_JoinForm.jsp</welcome-file>
+    <!-- 
+     <welcome-file>/WEB-INF/views/login/Ex02_JDBC_Login.jsp</welcome-file>    
+     -->
+     <welcome-file>/WEB-INF/views/login/Ex02_JDBC_Login.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

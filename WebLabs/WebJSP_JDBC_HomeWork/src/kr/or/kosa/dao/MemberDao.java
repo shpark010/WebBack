@@ -113,7 +113,7 @@ public class MemberDao {
 				m.setPwd(rs.getString("pwd"));
 				m.setName(rs.getString("name"));
 				m.setAge(rs.getInt("age"));
-				m.setGender(rs.getString("gender"));
+				m.setGender(rs.getString("gender").trim());
 				m.setEmail(rs.getString("email"));
 				m.setIp(rs.getString("ip"));
 			}
